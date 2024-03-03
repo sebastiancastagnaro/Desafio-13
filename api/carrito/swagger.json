@@ -1,0 +1,34 @@
+
+
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "API de Carritos",
+      "description": "API para gestionar carritos de compras."
+    },
+    "basePath": "/api/carrito",
+    "paths": {
+      "/": {
+        "get": {
+          "summary": "Obtener el contenido del carrito",
+          "responses": {
+            "200": {
+              "description": "Operación exitosa",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "message": {
+                    "type": "string",
+                    "example": "Obtener contenido del carrito"
+                  }
+                }
+              }
+            }
+          }
+        }
+        
+      }
+    }
+  }
+  

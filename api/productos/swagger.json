@@ -1,0 +1,62 @@
+
+
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "API de Productos",
+      "description": "API para gestionar productos."
+    },
+    "basePath": "/api/productos",
+    "paths": {
+      "/": {
+        "get": {
+          "summary": "Obtener todos los productos",
+          "responses": {
+            "200": {
+              "description": "Operación exitosa",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "message": {
+                    "type": "string",
+                    "example": "Obtener todos los productos"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/{id}": {
+        "get": {
+          "summary": "Obtener un producto por su ID",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "description": "ID del producto",
+              "required": true,
+              "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Operación exitosa",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "message": {
+                    "type": "string",
+                    "example": "Obtener producto con ID {id}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+  
